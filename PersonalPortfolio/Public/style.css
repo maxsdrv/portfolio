@@ -374,6 +374,10 @@ body {
     cursor: pointer;
 }
 
+.contact-form .email {
+    text-transform: lowercase;
+}
+
 /* footer */
 
 .footer {

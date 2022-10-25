@@ -54,7 +54,8 @@ const lastName = document.querySelector('.last-name');
 const email = document.querySelector('.email');
 const msg = document.querySelector('.message');
 
-contactBtn.addEventListener('click', () => {
+
+contactBtn.addEventListener('click',  () => {
     if (firstName.value.length && lastName.value.length && email.value.length && msg.value.length) {
         fetch('/mail', {
             method: 'post',
@@ -66,11 +67,13 @@ contactBtn.addEventListener('click', () => {
                 msg: msg.value,
             })
         })
-            .then(res => res.json())
-            .then(data => {
-                alert(data);
-            })
+
+        .then(res => res.json())
+        .then(data => {
+            alert(data);
+        })
     }
 })
+
 
 
