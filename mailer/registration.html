@@ -11,18 +11,18 @@
     <div class="row justify-content-md-center">
         <div class="col-md-auto">
             <h1>Credentials</h1>
-            <form>
+            <form method="post" action="http://localhost:3000/registration">
                 <div class="form-group">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                 </div>
                 <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" name="promo" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Agree to receive promotion emails</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
