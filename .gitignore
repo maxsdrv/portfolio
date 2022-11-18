@@ -1,1 +1,3 @@
 /PersonalPortfolio/.idea/
+/PersonalPortfolio/node_modules/
+.gitignore
