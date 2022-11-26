@@ -8,11 +8,8 @@ const transporter = nodemailer.createTransport({
             user: 'maxim_maxim_search',
             pass: 'gufiduckandsnoopi'
         }
-    },
-    {
-        from: 'Mailer test <maxim_sdrv@mail.ru>',
-    });
-
+    })
+    
 const mailer = message => {
     transporter.sendMail(message, (err, info) => {
         if (err) return console.log(err);
