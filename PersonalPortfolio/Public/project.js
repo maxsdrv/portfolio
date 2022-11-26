@@ -17,6 +17,6 @@ let projects = [
     {
         name: "project four",
         tags: "#c++, #ui",
-        image: "Selection_004.png",
+        image: "Selection_004.jpg",
     }
 ]
