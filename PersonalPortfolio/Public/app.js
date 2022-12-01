@@ -10,20 +10,31 @@ links.forEach(link => {
 })
 
 // creating dynamic project card
+const contImg = document.querySelector('.project-container');
+
+function scaleImg() {
+    const idImg = document.getElementById("demo").style.transform = "scale(1.5)";
+    idImg = document.getElementById("demo").style.transition = "transform 0.25s ease";
+}
+function resetImg() {
+    const idImg = document.getElementById("demo2").style.transform = "scale(1)";
+    idImg.style.transition = "transform 0.25s ease";
+}
 
 const projectContainer = document.querySelector('.project-container');
 
 projects.forEach(project => {
     projectContainer.innerHTML += `
     <div class="project-card" data-tags="#all, ${project.tags}">
-        <img src="img/${project.image}" alt="">
+        <h3 id="demo" onclick="scaleImg()"Click me</h3>
+        <img src="img/${project.image}" alt=""/>
         <div class="content">
             <h1 class="project-name">${project.name}</h1>
             <span class="tags">${project.tags}</span>
         </div>
     </div>
     `;
-})
+});
 
 // filters
 
@@ -55,11 +66,11 @@ const email = document.querySelector('.email');
 const msg = document.querySelector('.message');
 
 
-contactBtn.addEventListener('click',  () => {
+contactBtn.addEventListener('click', () => {
     if (firstName.value.length && lastName.value.length && email.value.length && msg.value.length) {
         fetch('/mail', {
             method: 'post',
-            headers: new Headers({'Content-Type': 'application/json'}),
+            headers: new Headers({ 'Content-Type': 'application/json' }),
             body: JSON.stringify({
                 firstname: firstName.value,
                 lastname: lastName.value,
@@ -68,10 +79,10 @@ contactBtn.addEventListener('click',  () => {
             })
         })
 
-        .then(res => res.json())
-        .then(data => {
-            alert(data);
-        })
+            .then(res => res.json())
+            .then(data => {
+                alert(data);
+            })
     }
 })
 

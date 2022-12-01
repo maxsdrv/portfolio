@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,136 +9,139 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body>
-<!-- navbar -->
+    <!-- navbar -->
 
-<nav class="navbar">
-    <h1 class="brand">logo</h1>
-    <form method="post" action="http://localhost:3000/index"> </form>
-    <div class="toggle-btn">
-        <span></span>
-        <span></span>
-    </div>
-    <ul class="links-container">
-        <li class="links-item"><a href="#" class="link active">home</a></li>
-        <li class="links-item"><a href="#project-section" class="link">project</a></li>
-        <li class="links-item"><a href="#about-section" class="link">about</a></li>
-        <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <h1 class="brand">logo</h1>
+        <form method="post" action="http://localhost:3000/index"> </form>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="links-container">
+            <li class="links-item"><a href="#" class="link active">home</a></li>
+            <li class="links-item"><a href="#project-section" class="link">project</a></li>
+            <li class="links-item"><a href="#about-section" class="link">about</a></li>
+            <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
+        </ul>
+    </nav>
 
-<!-- home section -->
-<section class="home">
-    <div class="hero-content">
-        <h1 class="hero-heading"><span class="highlight">hi, </span>i am maxim
-        </h1>
-        <p class="profession">software engineer</p>
-        <p class="info"> 
-            “There are no limits on what you can achieve with your life, except the limits you accept in your mind.”<br> 
-             — Brian Tracy
+    <!-- home section -->
+    <section class="home">
+        <div class="hero-content">
+            <h1 class="hero-heading"><span class="highlight">hi, </span>i am maxim
+            </h1>
+            <p class="profession">software engineer</p>
+            <p class="info">
+                “There are no limits on what you can achieve with your life, except the limits you accept in your
+                mind.”<br>
+                — Brian Tracy
             </p>
-        <a href="#contact-section" class="btn">contact</a>
-    </div>
-    <img src="img/max.png" class="image" alt="">
-</section>
+            <a href="#contact-section" class="btn">contact</a>
+        </div>
+        <img src="img/max.png" class="image" alt="">
+    </section>
 
-<!-- about section -->
-<section class="about" id="about-section">
-    <h2 class="heading">about <span class="highlight">me</span></h2>
-    <p class="sub-heading">Bla...bla...bla....</p>
-    <div class="separator"></div>
+    <!-- about section -->
+    <section class="about" id="about-section">
+        <h2 class="heading">about <span class="highlight">me</span></h2>
+        <p class="sub-heading">A human should be honest by nature, not by circumstance.<br>
+            -Marcus Aurelius</p>
+        <div class="separator"></div>
 
-    <div class="about-me-container">
-        <div class="left-col">
-            <img src="img/portf.png" class="about-image" alt="">
+        <div class="about-me-container">
+            <div class="left-col">
+                <img src="img/portf.png" class="about-image" alt="">
+            </div>
+            <div class="right-col">
+                <p class="about-para">
+                    STL, Boost, basic algorithms and data structures, unit tests, OOP, templates, design patterns.
+                    Experience with Linux, basic administration. Computer networks (TCP/UDP, OSPF, IPSEC) SQL (building
+                    simple queries, creating, joining tables, data aggregation, indexing), MongoDB. Familiar with
+                    OpenGL, GLSL shaders.
+                </p>
+                <a href="#" class="btn">download cv</a>
+            </div>
         </div>
-        <div class="right-col">
-            <p class="about-para">
-                STL, Boost, basic algorithms and data structures, unit tests, OOP, templates, design patterns.
-                Experience with Linux, basic administration. Computer networks (TCP/UDP, OSPF, IPSEC) SQL (building
-                simple queries, creating, joining tables, data aggregation, indexing), MongoDB. Familiar with
-                OpenGL, GLSL shaders.
-            </p>
-            <a href="#" class="btn">download cv</a>
-        </div>
-    </div>
 
-    <h2 class="heading">languages and framework i know</h2>
-    <div class="separator"></div>
-    <div class="skill-container">
-        <div class="skill-card large" style="--bg: #f06529">
-            <p class="skill">C++</p>
+        <h2 class="heading">languages and framework i know</h2>
+        <div class="separator"></div>
+        <div class="skill-container">
+            <div class="skill-card large" style="--bg: #f06529">
+                <p class="skill">C++</p>
+            </div>
+            <div class="skill-card" style="--bg: #cc6699">
+                <p class="skill">JavaScript Node.js</p>
+            </div>
+            <div class="skill-card" style="--bg: #5ed9fb">
+                <p class="skill">Python</p>
+            </div>
+            <div class="skill-card" style="--bg: #83cd29">
+                <p class="skill">HTML CSS</p>
+            </div>
+            <div class="skill-card" style="--bg: #326690">
+                <p class="skill">Qt QML</p>
+            </div>
+            <div class="skill-card" style="--bg: #5ed9fb">
+                <p class="skill">MongoDB SQL</p>
+            </div>
         </div>
-        <div class="skill-card" style="--bg: #cc6699">
-            <p class="skill">JavaScript</p>
-        </div>
-        <div class="skill-card" style="--bg: #5ed9fb">
-            <p class="skill">Python</p>
-        </div>
-        <div class="skill-card" style="--bg: #83cd29">
-            <p class="skill">HTML CSS</p>
-        </div>
-        <div class="skill-card" style="--bg: #326690">
-            <p class="skill">Qt QML</p>
-        </div>
-        <div class="skill-card" style="--bg: #ffa000">
-            <p class="skill">NodeJS</p>
-        </div>
-        <div class="skill-card" style="--bg: #5ed9fb">
-            <p class="skill">MongoDB SQL</p>
-        </div>
-        <div class="skill-card" style="--bg: #483d8b">
-            <p class="skill">ASP.NET Core</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- project section -->
-<section class="project" id="project-section">
-    <h2 class="heading">Project<span class="highlight">s</span></h2>
-    <p class="sub-heading">Bla...bla...bla....</p>
-    <div class="separator"></div>
+    <!-- project section -->
+    <section class="project" id="project-section">
+        <h2 class="heading">Project<span class="highlight">s</span></h2>
+        <p class="sub-heading">
+            “C++ is designed to allow you to express ideas, but if you don't have ideas or don't have any clue about how
+            to express them, C++ doesn't offer much help.” <br>
+            ― Bjarne Stroustrup
+        </p>
+        <div class="separator"></div>
 
-    <div class="filters">
-        <button class="filter-btn active" id="all">all</button>
-        <button class="filter-btn" id="ui">ui</button>
-        <button class="filter-btn" id="network">network</button>
-        <button class="filter-btn" id="game">game</button>
-    </div>
+        <div class="filters">
+            <button class="filter-btn active" id="all">all</button>
+            <button class="filter-btn" id="network">network</button>
+            <button class="filter-btn" id="libraries">libraries</button>
+            <button class="filter-btn" id="backend/frontend">backend/frontend</button>
+        </div>
 
-    <div class="project-container">
-        <!--<div class="project-card">
+        <div class="project-container">
+            <!-- <div class="project-card">
             <img src="img/Selection_001.png" alt="">
             <div class="content">
                 <h1 class="project-name">project one</h1>
                 <span class="tags">#c++(server and server settings)</span>
             </div>
-        </div>-->
-    </div>
-</section>
-
-<!-- contact form -->
-<section class="contact" id="contact-section">
-    <h2 class="heading">Contact<span class="highlight"> me</span></h2>
-    <p class="sub-heading">Bla...bla...bla....</p>
-    <div class="separator"></div>
-
-    <div class="contact-form">
-        <div class="name">
-            <input type="text" class="first-name" required placeholder="first name">
-            <input type="text" class="last-name" required placeholder="last name">
+        </div> -->
         </div>
+    </section>
 
-        <input type="email" required class="email" placeholder="email">
-        <textarea class="message" placeholder="message" required></textarea>
-        <button class="btn contact-btn">contact</button>
-    </div>
-</section>
+    <!-- contact form -->
+    <section class="contact" id="contact-section">
+        <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+        <p class="sub-heading">I hope you interesting my portfolio.<br>
+            I'am looking forward to you contacting me. </p>
+        <div class="separator"></div>
 
-<footer class="footer">Kind regards Maxim.</footer>
+        <div class="contact-form">
+            <div class="name">
+                <input type="text" class="first-name" required placeholder="first name">
+                <input type="text" class="last-name" required placeholder="last name">
+            </div>
+
+            <input type="email" required class="email" placeholder="email">
+            <textarea class="message" placeholder="message" required></textarea>
+            <button class="btn contact-btn">contact</button>
+        </div>
+    </section>
+
+    <footer class="footer">Kind regards Maxim.</footer>
 
     <script src="project.js"></script>
     <script src="app.js"></script>
 
 </body>
+
 </html>
