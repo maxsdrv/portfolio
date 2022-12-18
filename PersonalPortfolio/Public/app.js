@@ -9,25 +9,14 @@ links.forEach(link => {
     })
 })
 
-// creating dynamic project card
-const contImg = document.querySelector('.project-container');
-
-function scaleImg() {
-    const idImg = document.getElementById("demo").style.transform = "scale(1.5)";
-    idImg = document.getElementById("demo").style.transition = "transform 0.25s ease";
-}
-function resetImg() {
-    const idImg = document.getElementById("demo2").style.transform = "scale(1)";
-    idImg.style.transition = "transform 0.25s ease";
-}
+//creating dynamic project card
 
 const projectContainer = document.querySelector('.project-container');
 
 projects.forEach(project => {
     projectContainer.innerHTML += `
     <div class="project-card" data-tags="#all, ${project.tags}">
-        <h3 id="demo" onclick="scaleImg()"Click me</h3>
-        <img src="img/${project.image}" alt=""/>
+        <img src="img/${project.image}" alt=""/ id="photo">
         <div class="content">
             <h1 class="project-name">${project.name}</h1>
             <span class="tags">${project.tags}</span>
@@ -35,6 +24,25 @@ projects.forEach(project => {
     </div>
     `;
 });
+
+// Make the click magic shows up
+
+// const photos = Array.from(document.querySelectorAll('#photo'));
+
+// const scalingImage = (currentPhoto => {
+    
+//     currentPhoto.classList.add("scaleImage");
+
+//     setTimeout(() => {
+//         currentPhoto.classList.remove('scaleImage');
+//     }, 4500);
+// });
+
+// photos.map((photo) => {
+//     photo.addEventListener('click', Event => {
+//         scalingImage(Event.target);
+//     });
+// });
 
 // filters
 
@@ -57,6 +65,14 @@ filters.forEach(filterBtn => {
         filterBtn.classList.add('active');
     })
 })
+
+//Make the click magic shows up
+projects.forEach(photos => {
+    photos.addEventListener("click", (event) => {
+        event.alert('Hello');
+    }); 
+});
+
 
 // contact form
 const contactBtn = document.querySelector('.contact-btn');
